@@ -14,7 +14,7 @@ export const handleNovoItem = (evento) => {
    const calendario = document.querySelector('[data-form-date]')
    const data = moment(calendario.value)
 
-   const dataFormatada = data.format('DD/MMM/YYYY')
+   const dataFormatada = data.format('DD/MM/YYYY')
    
    const dados = {
       valor,
@@ -23,14 +23,10 @@ export const handleNovoItem = (evento) => {
 
    const tarefasAtualizadas = [...tarefas, dados]  // spread operator - nesse cadso pega tudo o que se refere a 'tarefas' e 'dados'
 
-  
-
    localStorage.setItem('tarefas' , JSON.stringify(tarefasAtualizadas))
 
    input.value = " "
    carregaTarefa()
-
-
 }
 
 export const Tarefa = ({valor, dataFormatada}) => {
