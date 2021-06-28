@@ -13,6 +13,3 @@ export const carregaTarefa = () => {
         lista.appendChild(criaData(dia))
     })
 }
-
-// const criaTarefa = Tarefa(dados)
-// const lista = document.querySelector('[data-list]')

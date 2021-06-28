@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="./assets/css/style.css">
- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BioRhyme&amp;family=Space+Mono&amp;display=swap">
- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
- <title>To Do List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BioRhyme&amp;family=Space+Mono&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>To-Do-List</title>
 </head>
 <body>
- <div class="app">
-  <div class="todo-list">
-    <h1 class="title">
-      To Do List
-    </h1>
+  <div class="app">
+    <div class="todo-list">
+      <h1 class="title">
+        To-Do-List
+      </h1>
+      
+      <form class="form" action="">
+        <input class="form-input" type="text" data-form-input>
+        
+        <input type="datetime-local" placeholder="preencha 2020-02-23" data-form-date >
+        <button class="form-button" data-form-button> Novo Item </button>
+      </form>
 
-    <form class="form" action="">
-      <input class="form-input" data-form-input type="text">
-      <input type="datetime-local"  placeholder="Preencher  no formato 2020-02-23" data-form-date/> 
-      <button class="form-button" data-form-button> Novo Item </button>
-    </form>
-
-    <ul class="list" data-list>
-
-    </ul>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- <script type="module" src="main.js"></script>
+      <ul class="list" data-list>
+        
+      </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
